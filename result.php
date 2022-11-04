@@ -28,7 +28,7 @@
                         }
                     ?>
                     <td 
-                        style = "background-color: rgb(<?php echo $r . ", " . $g . "," . $b ?>); font-size: 22px;"
+                        style = "border: 3px solid black; padding: 10px;background-color: rgb(<?php echo $r . ", " . $g . "," . $b ?>); font-size: 22px;"
                     >
                         <?php echo $i . "," . $j?>
                     </td>
