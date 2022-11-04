@@ -1,10 +1,7 @@
 <?php
     $colonne = $_POST["colonne"];
     $righe = $_POST["righe"];
-    $colorato = $_POST["colorato"];
-
-    
-    
+    $colorato = $_POST["colorato"];  
 ?>
 
 <!DOCTYPE html>
@@ -31,9 +28,11 @@
                         }
                     ?>
                     <td 
-                        style = "background-color: rgb(<?php 10 ?>, <?php 10 ?>, <?php 10 ?>);"
-                    >cell</td>
-                <?php endfor; ?>
+                        style = "background-color: rgb(<?php echo $r . ", " . $g . "," . $b ?>); font-size: 22px;"
+                    >
+                        <?php echo $i . "," . $j?>
+                    </td>
+                    <?php endfor; ?>
                 </tr>
             <?php endfor;
 

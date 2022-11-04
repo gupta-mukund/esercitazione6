@@ -9,13 +9,13 @@
 <body>
     <form method="post" action="result.php">
         <label for="righe">Numero righe:</label>
-        <input type="number" name="righe" id="righe">
+        <input type="number" name="righe" id="righe" required min=0>
         <label for="colonne">Numero colonne:</label>
-        <input type="number" name="colonne" id="colonne">
+        <input type="number" name="colonne" id="colonne" required min=0>
         <label for="si">Si</label>    
-        <input type="radio" name="colorato" value="true" id="si">
+        <input type="radio" name="colorato" value="true" id="si" required>
         <label for="no">No</label>    
-        <input type="radio" name="colorato" value="false" id="no">
+        <input type="radio" name="colorato" value="false" id="no" required>
         <button type="submit">Genera</button>
     </form>
 </body>
